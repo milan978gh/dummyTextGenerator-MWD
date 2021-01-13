@@ -1,3 +1,5 @@
+$ff-primary: Georgia, serif;
+$ff-secondary: Tahoma, sans-serif;
 
 * {
 	margin: 0;
@@ -6,4 +8,55 @@
 	list-style: none;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+}
+body {
+	font-family: $ff-secondary;
+	background: #f1f5f8;
+	color: #102a42;
+	line-height: 1.5;
+
+	.section-center {
+		width: 90vw;
+		margin: 0 auto;
+		max-width: 40rem;
+		margin-top: 5rem;
+		text-align: center;
+
+		h2 {
+			text-transform: capitalize;
+			line-height: 1.25;
+			font-family: $ff-primary;
+    }
+    .lorem-form {
+      text-transform: capitalize;
+      letter-spacing: .25rem;
+      margin: 2rem 0;
+
+      input {
+        padding: 0.25rem 0.5rem;
+        width: 4rem;
+        border: none;
+        border-radius: 5px;
+        margin: 0 .5rem;
+        font-size: 1.5rem;
+      }
+      .btn {
+        text-transform: uppercase;
+        background: #49a6e9;
+        color: #063251;
+        padding: 0.5rem 0.75rem;
+        letter-spacing: 1px;
+        display: inline-block;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 5px;
+      }
+    }
+  }
+  .result {
+    color: #617d98;
+    margin-bottom: 2rem;
+  }
 }
